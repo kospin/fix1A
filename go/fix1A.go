@@ -35,7 +35,7 @@ func main() {
 			fmt.Println(werr)
 		}
 		if 去1A尾行 {
-			fmt.Println("完成修正")
+			fmt.Println("完成修正!")
 		}
 	}
 }
