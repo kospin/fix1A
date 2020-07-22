@@ -1,9 +1,7 @@
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.nio.file.FileSystems;
-import java.nio.file.Files;
-import java.nio.file.Path;
 
 public class Fix1A {
     public static void main(String[] args) {
@@ -20,7 +18,7 @@ public class Fix1A {
             System.out.print(s.trim());
             reader.close();
 
-        } catch (IOException e) {
+        } catch (final IOException e) {
             e.printStackTrace();
         }
 
