@@ -32,9 +32,10 @@ ODOA是換行字元
 最後trim去尾換行~~  
 啊就直接讀完trim去尾就好了
 
-### delphi
+### delphi(lazarus)
 
-Stringlist讀完trim去尾回存
+Stringlist讀完trim去尾~~回存~~  
+回存自帶換行,直接輸出
 
 ### dart
 
