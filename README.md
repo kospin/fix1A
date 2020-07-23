@@ -39,4 +39,7 @@ Stringlist讀完trim去尾~~回存~~
 
 ### dart
 
+讀bytes陣  
+若可移除1A(26)就再縮尾2元素
+
 ### Ruby
