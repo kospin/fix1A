@@ -16,8 +16,8 @@ dbase資料庫經copy to輸出文字檔後在檔尾多了0D0A1A三個字元導�
 
 ![](p1.png)
 
-`fix1A.exe 123.txt >tmp`
-`del 123.txt`
+`fix1A.exe 123.txt >tmp`  
+`del 123.txt`  
 `ren tmp 123.txt`
 
 ### Python
@@ -48,8 +48,8 @@ dbase資料庫經copy to輸出文字檔後在檔尾多了0D0A1A三個字元導�
 Stringlist讀完trim去尾~~回存~~  
 回存自帶換行,直接輸出  
 
-`fix1A.exe 123.txt > tmp`
-`del 123.txt`
+`fix1A.exe 123.txt > tmp`  
+`del 123.txt`  
 `ren tmp 123.txt`
 
 ### dart
