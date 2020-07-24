@@ -45,6 +45,12 @@ Stringlist讀完trim去尾~~回存~~
 
 ### Ruby
 
+重新安裝中...
+
+### kotlin
+
+readbytes如果最後元素為26就縮尾3元素存回
+
 ## 還有嗎
 
 + trim很好用
