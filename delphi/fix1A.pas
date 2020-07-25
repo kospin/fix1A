@@ -47,7 +47,8 @@ begin
    with TstringList.Create do
    begin
         LoadFromFile(ParamStr(1));
-        write(trim(Text));
+        if (trim(strings[count-1])='') then
+           TFileStream.Create(ParamStr(1),fmCreate).write(Pointer(trim(Text))^,length(trim(Text)));
    end;
    Terminate;
 end;

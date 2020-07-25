@@ -14,7 +14,8 @@ dbase資料庫經copy to輸出文字檔後在檔尾多了0D0A1A三個字元導�
 
 ### C++
 
-重弄
+重弄,stringstream 看不到1A  
+出現兩個10,丟掉後回存
 
 `fix1A.exe 123.txt`  
 
@@ -43,12 +44,9 @@ dbase資料庫經copy to輸出文字檔後在檔尾多了0D0A1A三個字元導�
 
 ### delphi(lazarus)
 
-Stringlist讀完trim去尾~~回存~~  
-回存自帶換行,直接輸出  
+Tstringlist讀完,若尾行為空,trim去尾回存
 
-`fix1A.exe 123.txt > tmp`  
-`del 123.txt`  
-`ren tmp 123.txt`
+`fix1A.exe 123.txt`
 
 ### dart
 
@@ -64,8 +62,7 @@ Stringlist讀完trim去尾~~回存~~
 ### kotlin
 
 readbytes如果最後元素為26就縮尾3元素存回
-  
-`kotlinc Fix1A.kt -include-runtime -d Fix1A.jar`  
+   
 `java -jar'Fix1A.jar 123.txt`
 
 ## 還有嗎
