@@ -14,11 +14,9 @@ dbase資料庫經copy to輸出文字檔後在檔尾多了0D0A1A三個字元導�
 
 ### C++
 
-![](p1.png)
+重弄
 
-`fix1A.exe 123.txt >tmp`  
-`del 123.txt`  
-`ren tmp 123.txt`
+`fix1A.exe 123.txt`  
 
 ### Python
 
