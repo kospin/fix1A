@@ -40,7 +40,7 @@ dbase資料庫經copy to輸出文字檔後在檔尾多了0D0A1A三個字元導�
 最後trim去尾換行~~  
 啊就直接讀完trim去尾就好了  
 
-`java.exe" Fix1A.java 123.txt`
+`java.exe Fix1A.java 123.txt`
 
 ### delphi(lazarus)
 
@@ -57,13 +57,15 @@ Tstringlist讀完,若尾行為空,trim去尾回存
 
 ### Ruby
 
-重新安裝中...
+讀檔,判尾跳行則回存strip
+
+`ruby fix1A.rb 123.txt`
 
 ### kotlin
 
 readbytes如果最後元素為26就縮尾3元素存回
-   
-`java -jar'Fix1A.jar 123.txt`
+
+`java -jar Fix1A.jar 123.txt`
 
 ## 還有嗎
 
