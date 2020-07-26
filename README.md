@@ -58,11 +58,8 @@ Tstringlist讀完,若尾行為空,trim去尾回存
 ### Ruby
 
 讀檔,判尾跳行則回存strip
-<<<<<<< HEAD
 
 `ruby fix1A.rb 123.txt`
-=======
->>>>>>> f904e03e8599930721f584a488ffd7a96b885c86
 
 ### kotlin
 
