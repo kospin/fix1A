@@ -70,8 +70,8 @@ readbytes如果最後元素為26就縮尾3元素存回
 
 ### AutoIt
 
-檢查若檔尾為26則~~縮3元素存回~~  
-開notepad從檔尾backspace兩次,存檔,離開
+全notepad自動化...  
+notepad開檔若選取尾碼為26則從檔尾backspace兩次,存檔,離開
 
 `fix1A.exe 123.txt`
 
