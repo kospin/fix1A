@@ -68,9 +68,17 @@ readbytes如果最後元素為26就縮尾3元素存回
 
 `java -jar Fix1A.jar 123.txt`
 
+### AutoIt
+
+檢查若檔尾為26則~~縮3元素存回~~  
+開notepad從檔尾backspace兩次,存檔,離開
+
+`fix1A.exe 123.txt`
+
 ## 還有嗎
 
 + trim很好用
 + list [:]超方便
 + 0D0A是一字還兩字?以前是用text或byte看,現在好像用encode解決
 + encode,decode,utf8,utf16,utf32,ascii,latin1 還好其實可以不處理big5
++ 從 **讀-->修-->判-->寫** 到 **讀-->判--寫(修)** 到 **判(讀)-->寫(修)** 能不能到 **寫(修(判(讀)))** ?
