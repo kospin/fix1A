@@ -38,8 +38,8 @@ dbase資料庫經copy to輸出文字檔後在檔尾多了0D0A1A三個字元導�
 
 ~~行取再合併,如果長度<=1就跳過  
 最後trim去尾換行~~  
-啊就直接讀完trim去尾就好了
-最好還是加上判斷26啦 
+啊就直接讀完trim去尾就好了  
+**加上判斷26再存檔**
 
 `java.exe Fix1A.java 123.txt`
 
@@ -75,6 +75,15 @@ notepad開檔若選取尾碼為26則從檔尾backspace兩次,存檔,離開
 
 `fix1A.exe 123.txt`
 
+### PowerShell
+
+(Encode部份版本5和6,7不相容;最後還是測試出一組參數)  
+讀檔,若檔尾為26則不存尾3碼  
+win10內建要先開未簽名脚本執行權限  
+`set-executionpolicy remotesigned`
+
+`./fix1A.ps1 123.txt`
+
 ## 還有嗎
 
 + trim很好用
@@ -82,3 +91,4 @@ notepad開檔若選取尾碼為26則從檔尾backspace兩次,存檔,離開
 + 0D0A是一字還兩字?以前是用text或byte看,現在好像用encode解決
 + encode,decode,utf8,utf16,utf32,ascii,latin1 還好其實可以不處理big5
 + 從 **讀-->修-->判-->寫** 到 **讀-->判--寫(修)** 到 **判(讀)-->寫(修)** 能不能到 **寫(修(判(讀)))** ?
++ AutoIt開資料庫自動key單...如何?
