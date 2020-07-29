@@ -9,8 +9,8 @@ Run("notepad.exe " & $CmdLine[1])
 WinWaitActive("[CLASS:Notepad]")
 
 ; Now that the Notepad window is active type some text
-Send("{CTRLDOWN}{END}{CTRLUP}")
-Send("{SHIFTDOWN}{LEFT}{SHIFTUP}")
+Send("^{END}")
+Send("+{LEFT}")
 local $tmpClip=ClipGet()
 Send("^c")
 local $sClip=ClipGet()
@@ -18,7 +18,7 @@ local $aClip=StringToASCIIArray($sClip)
 
 if $aClip[0]=26 then
     Send("+{BS 2}")
-    Send("{CTRLDOWN}{s}{CTRLUP}")
+    Send("^{s}")
 endif
 ; Now quit by pressing Alt-F 
 Send("!f")
