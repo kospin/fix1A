@@ -79,13 +79,24 @@ notepad開檔若選取尾碼為26則從檔尾backspace兩次,存檔,離開
 
 (Encode部份版本5和6,7不相容;最後還是測試出一組參數)  
 讀檔,若檔尾為26則不存尾3碼  
-win10內建要先開未簽名脚本執行權限  
+win10內建要先開未簽名脚本執行權限
+
 `set-executionpolicy remotesigned`
 
 `./fix1A.ps1 123.txt`
 
+### QuickBasic
+
+檢查檔尾26若有則行取加換行合併  
+最後一行不加換行寫回
+
+`FIX1A 123.TXT`
+
+---
+
 ## 還有嗎
 
++ 檢查? byte查數字,string查長度,stringlist查空行
 + trim很好用
 + list [:]超方便
 + 0D0A是一字還兩字?以前是用text或byte看,現在好像用encode解決
