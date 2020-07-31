@@ -2,9 +2,15 @@
 #include <MsgBoxConstants.au3>
 #include <WinAPIFiles.au3>
 
+local $filename=""
+if $CmdLine[0]=0 Then
+    $filename=FileOpenDialog("選取欲修正文字檔",".\","All (*.*)")
+Else
+    $filename=$CmdLine[1]
+endif
 
 ; Run Notepad
-Run("notepad.exe " & $CmdLine[1])
+Run("notepad.exe " & $filename)
 ; Wait for the Notepad to become active. The classname "Notepad" is monitored instead of the window title
 WinWaitActive("[CLASS:Notepad]")
 
