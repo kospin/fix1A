@@ -32,7 +32,7 @@ dbase資料庫經copy to輸出文字檔後在檔尾多了0D0A1A三個字元導�
 輸出,最後一行不送出換行~~  
 讀bytelist,如果最後是26就縮尾3元素存回
 
-`go run Fix1A.go 123.txt`
+`fix1A.exe 123.txt`
 
 ### java
 
@@ -95,6 +95,12 @@ win10內建要先開未簽名脚本執行權限
 ### Rust
 
 讀檔若pop出26就再pop2次!! 回存
+
+`fix1A.exe 123.txt`
+
+### VB.Net
+
+讀檔若尾26則不取後3碼入陣存回
 
 `fix1A.exe 123.txt`
 
