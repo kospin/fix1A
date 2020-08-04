@@ -54,7 +54,7 @@ Tstringlist讀完,若尾行為空,trim去尾回存
 讀bytes陣  
 若可移除1A(26)就再縮尾2元素
 
-`dart.exe Fix1A.dart 123.txt`
+`Fix1A.exe 123.txt`
 
 ### Ruby
 
@@ -90,7 +90,7 @@ win10內建要先開未簽名脚本執行權限
 檢查檔尾26若有則行取加換行合併  
 最後一行不加換行寫回
 
-`FIX1A 123.TXT`
+`FIX1A.EXE 123.TXT`
 
 ### Rust
 
