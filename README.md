@@ -79,7 +79,7 @@ notepad開檔若選取尾碼為26則從檔尾backspace兩次,存檔,離開
 
 (Encode部份版本5和6,7不相容;最後還是測試出一組參數)  
 讀檔,若檔尾為26則不存尾3碼  
-win10內建要先開未簽名脚本執行權限
+**win10內建要先開未簽名脚本執行權限**
 
 `set-executionpolicy remotesigned`
 
@@ -98,15 +98,21 @@ win10內建要先開未簽名脚本執行權限
 
 `fix1A.exe 123.txt`
 
-### VB.Net
+### VB .Net
 
 讀檔若尾26則不取後3碼入陣存回
 
 `fix1A.exe 123.txt`
 
-### C#.Net
+### C# .Net
 
 .Net函數一樣都的吧...(執行檔大小也一樣)
+
+`fix1A.exe 123.txt`
+
+### Clipper
+
+讀檔若檔尾26則去尾3碼存回
 
 `fix1A.exe 123.txt`
 
@@ -122,3 +128,4 @@ win10內建要先開未簽名脚本執行權限
 + 從 **讀-->修-->判-->寫** 到 **讀-->判--寫(修)** 到 **判(讀)-->寫(修)** 能不能到 **寫(修(判(讀)))** ?
 + AutoIt開資料庫自動key單...如何?
 + Rust!!快速!安全!高效平行運算! 卻有著打槍**而且不知道為什麼打槍**最多次的編譯器...巨集? 所有權? 參考? 借用? 以前分call by value, call by references, call by address還不夠用嗎?
++ Clipper看到 BASIC 和 C 還有 Pascal 的影子啊
