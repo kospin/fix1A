@@ -116,6 +116,12 @@ notepad開檔若選取尾碼為26則從檔尾backspace兩次,存檔,離開
 
 `fix1A.exe 123.txt`
 
+### Node.js
+
+讀檔若檔尾26則去尾3碼存回
+
+`node fix1A.js 123.txt`
+
 ---
 
 ## 還有嗎
@@ -128,4 +134,6 @@ notepad開檔若選取尾碼為26則從檔尾backspace兩次,存檔,離開
 + 從 **讀-->修-->判-->寫** 到 **讀-->判--寫(修)** 到 **判(讀)-->寫(修)** 能不能到 **寫(修(判(讀)))** ?
 + AutoIt開資料庫自動key單...如何?
 + Rust!!快速!安全!高效平行運算! 卻有著打槍**而且不知道為什麼打槍**最多次的編譯器...巨集? 所有權? 參考? 借用? 以前分call by value, call by references, call by address還不夠用嗎?
-+ Clipper看到 BASIC 和 C 還有 Pascal 的影子啊
++ Clipper看得到 BASIC 和 C 還有 Pascal 的影子啊 ;Harbour -> HMG -> miniGUI ... Clipper永遠不死
+
++ node.js是真正的怪物.....真的
